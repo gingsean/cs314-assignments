@@ -47,8 +47,20 @@ a{
 
 .DarkBackground{
 	position: relative;
-	background-color: rgb(36, 9, 128);
+	background-image: radial-gradient(blue 10%, green 90%);
 	height: 300px;
+	margin-bottom: 10px;
+}
+
+.btn:hover{
+	background-color: black;
+	opacity: 0.4;
+	transition: opacity 1s ease;
+	cursor: pointer;
+}
+
+.btn:active{
+	transform: translate(-50%, -50%) scale(1.5);
 }
 
 .btn{
@@ -58,11 +70,95 @@ a{
 	transform: translate(-50%, -50%);
 	padding: 8px;
 	border: 2px solid;
+	text-decoration: unset;
 	color: white;
 	border-radius: 20%;
+	opacity: 1.0;
+	transition: opacity 2s ease;
+}
+
+.Group1{
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 5px;
+}
+
+.Group2{
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 5px;
+}
+
+.Group3{
+	display: flex;
+	justify-content: space-around;
 }
 
 .Finish{
 	background-color: black;
 	color: white;
+}
+
+.Color{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background-color: purple;
+}
+
+.Content1:hover{
+	opacity: 0.5;
+	transition: opacity 2s ease;
+}
+
+.Content1{
+	position: absolute;
+	opacity: 1.0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.Content2{
+	position: relative;
+	top: 35%;
+	animation: spinning 5s infinite;
+	-webkit-animation: spinning 5s infinite;
+  	-moz-animation: spinning 5s infinite;
+  	-o-animation: spinning 5s infinite;
+}
+
+@-webkit-keyframes spinning {
+ from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+
+@-moz-keyframes spinning {
+ from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes spinning {
+ from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
