@@ -1,0 +1,144 @@
+@font-face {
+font-family: "Montseratt Bold";
+src: url("css/fonts/Montseratt.eot");
+src: 
+url("css/fonts/Montseratt.woff") format("woff"),
+url("css/fonts/Montseratt.woff2") format("woff2"),
+url("css/fonts/Montseratt.ttf") format("ttf");
+}
+
+html {
+font-family: 'Montseratt Bold', Arial, sans-serif;
+font-weight:normal;
+font-style:normal;
+}
+
+.inner{
+	max-width: 75vw;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.toplink:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.Header{
+	background-color: black;
+	padding: 20px;
+}
+
+.toplink{
+	text-decoration: unset;
+	color: white;
+	padding-left: 20px;
+}
+
+.Center{
+	position: relative;
+	background-color: lightgray;
+	padding: 25px;
+	height: 300px;
+}
+
+.Child{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0 auto;
+	text-align: center;
+}
+
+.Headline{
+	font-size: 50px;
+	padding: 15px;
+}
+
+.Words{
+	font-size: 20px;
+	color: white;
+	padding-bottom: 25px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.btn:hover{
+	cursor: pointer;
+	opacity: 0.5;
+	transition: opacity 1s ease;
+}
+
+.btn:active{
+	background-color: black;
+	color: white;
+}
+
+.btn{
+	border-radius: 5px;
+	color: black;
+	border: 2px solid black;
+	padding: 5px;
+	text-decoration: unset;
+	color: black;
+	transform: translateX(-50%);
+	background-color: rgb(236, 240, 241);
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	opacity: 1.0;
+	transition: opacity 1s ease;
+}
+
+.Bottom{
+	max-width: 75vw;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.Box{
+	text-align: center;
+	width: 25%;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+.Pic{
+	padding: 15px;
+}
+
+.MoreWords{
+	padding-bottom: 25px;
+}
+
+.Button:hover{
+	cursor: pointer;
+	opacity: 0.5;
+	transition: opacity 1s ease;
+}
+
+.Button:active{
+	background-color: black;
+	color: white;
+}
+
+.Button{
+	border-radius: 5px;
+	color: black;
+	border: 2px solid black;
+	padding: 5px;
+	text-decoration: unset;
+	color: black;
+	background-color: rgb(236, 240, 241);
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	opacity: 1.0;
+	transition: opacity 1s ease;
+}
+
+@media only screen and (max-width: 768px)
+{
+	.Box{
+		width: 100vw;
+	}
+}
