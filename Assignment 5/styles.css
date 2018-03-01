@@ -1,0 +1,136 @@
+@font-face {
+font-family: "Arimo Regular";
+src: url("arimo-regular-webfont.eot");
+src: 
+url("arimo-regular-webfont.woff") format("woff"),
+url("arimo-regular-webfont.woff2") format("woff2"),
+url("arimo-regular-webfont.ttf") format("ttf");
+}
+
+html {
+font-family: 'Arimo Regular', Arial, sans-serif;
+font-weight:normal;
+font-style:normal;
+background-color: skyblue;
+}
+
+h1{
+	font-size: 60px;
+}
+
+p{
+	font-size: 30px;
+}
+
+.Header{
+	position: relative;
+	text-align: center;
+	background-color: salmon;
+	height: 30vh;
+	padding: 30px;
+}
+
+.Entries{
+	position: relative;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding: 25px;
+	background-color: white;
+	transform: translateY(-15%);
+	border-radius: 10px;
+	box-shadow: 
+}
+
+form{
+	max-width: 90%;
+	margin: auto;
+}
+
+label{
+	display: block;
+	padding: 1em 0 5px;
+	text-align: left;
+}
+
+input, select, textarea{
+	width: 100%;
+	box-sizing: border-box;
+	border: 2px blue solid;
+	border-radius: 5px;
+	padding: 0.5em;
+	color: purple;
+}
+
+.radio-container{
+	display: flex;
+	justify-content: space-around;
+	max-width: 75%;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.radio-container label{
+	padding: 0;
+	transform: translateX(150%);
+}
+
+textarea{
+	height: 400px;
+	resize: none;
+}
+
+input:focus, select:focus, textarea:focus{
+	outline: none;
+}
+
+input[type = "submit"]{
+	width: auto;
+	padding: 10px 20px;
+	background-color: white;
+	opacity: 1.0;
+	color: black;
+}
+
+input[type = "submit"]:hover{
+	opacity: 0.5;
+	transition: opacity 1s ease;
+	color: white;
+	background-color: black;
+	cursor: pointer;
+}
+
+input::placeholder, textarea::placeholder{
+	font-family: 'Arimo Regular', Arial, sans-serif;
+	font-weight:normal;
+	font-style:normal;
+	color: purple
+}
+
+
+@media only screen and (max-width: 1024px){
+	.radio-container label{
+		transform: translateX(100%);
+	}
+}
+
+
+@media only screen and (max-width: 768px)
+{
+	.radio-container{
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 30%;
+	}
+
+	.radio-container label{
+		display: inline-block;
+		transform: translateX(0%);
+		padding-top: 10px;
+	}
+
+	textarea{
+	height: 250px;
+	resize: none;
+	}
+}
