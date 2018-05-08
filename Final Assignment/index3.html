@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Map Page</title> 
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon-map-marker.ico" type="image/x-icon">
+    <link rel="icon" href="favicon-map-marker.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <script type = "text/javascript" src="jquery-3.3.1.min.js"></script>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href = "index.html"> Home </a>
+      <a href = "index2.html"> Form </a>
+      <a href = "index3.html"> Map </a>
+      <a href = "index4.html"> API </a>
+    </header>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIKamQxnIGE7OkZv6sZAuIan4B-KmveFk&callback=initMap"
+    async defer></script>
+    <section class = "markerInfo">
+      <h4> Marker Informartion </h4>
+      <p> Beth's Cafe: One of the best breakfast food restaurants in the Seattle that is open for 24 hours a day.  They are famous for their 12 egg omelets and delicious milkshakes.</p>
+      <p> Rhino Room: A great place to go for a night out if you're looking to let loose and show off your moves.  Located in the Capitol Hill area and always has a great atmosphere full of dancing. </p>
+      <p> Gum Wall: A favorite tourist location that makes for great social media pictures.  This wall is covered in gum and whenever it is cleaned off is completely covered again within days. </p>
+    </section>
+    <section class = "Footer">
+      <i class="fab fa-facebook-square"> </i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin"></i>
+    <section>
+    <script type = "text/javascript" src = "index.js"></script>
+  </body>
+</html>

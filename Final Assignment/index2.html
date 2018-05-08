@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Form Page</title> 
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon-clipboard.ico" type="image/x-icon">
+    <link rel="icon" href="favicon-clipboard.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <script type = "text/javascript" src="jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+  	<header>
+  		<a href = "index.html"> Home </a>
+      <a href = "index2.html"> Form </a>
+      <a href = "index3.html"> Map </a>
+      <a href = "index4.html"> API </a>
+  	</header>
+    <section class = "Top">
+      <h1> Contact Me </h1>
+    </section>
+    <section class = "Entries">
+       <div class = "MyInfo">
+        <img src = "profile.png" height = "150" width = "150">
+        <p> Email: ssturtevant@zagmail.gonzaga.edu </p>
+        <p> Phone: (253)-241-5274 </p>
+      <form name = "thisForm" onsubmit = "return submitButton()">
+        <div class = "Names">
+        <label for = "textinput"> First Name </label>
+        <input name = "fname" id = "textinput" placeholder = "Enter your first name." required>
+        </div>
+        <div class = "Names">
+        <label for = "textinput2"> Last Name </label>
+        <input name = "lname" id = "textinput2" placeholder="Enter your last name." required>
+        </div>
+        <br>
+        <label for = "emailaddress"> Email </label>
+        <input type = "email" id = "emailaddress" placeholder="Enter your email." required>
+        <br>
+        <label for = "phone"> Phone Number </label>
+        <input type="number" name = "pnumber" id = "phone" placeholder="Enter your phone number." required>
+        <br>
+        <label for = "contact"> What is the best way to get ahold of you? </label>
+        <select name = "selections" id = "contact">
+          <option value = "Email"> Email </option>
+          <option value = "Phone"> Phone </option>
+          <option value = "Both"> Either </option>
+        </select>
+        <br>
+        <label for = "reason"> Message </label>
+        <textarea name = "textarea" id = "reason" placeholder="Why would you like to contact me?"></textarea>
+        <br> <br>
+        <input type = "submit" value = "Submit">
+      </form>
+    </section>
+    <script type = "text/javascript" src = "index.js"></script>
+  </body>
+</html>
